@@ -10,6 +10,7 @@ public class App {
     // 정 객체 생성, 입력받음
 
     static void calculate_4(ArithmeticCalculator ac)throws Exception{
+
         System.out.print("첫번째 정수 입력하세요: ");
         int a = Integer.parseInt(br.readLine());    //1. 정수 1 입력
         System.out.print("두번째 정수 입력하세요: ");
@@ -77,6 +78,7 @@ public class App {
                 System.out.println("잘못된 입력입니다.");
                 continue;
             }
+
 
             System.out.println("더 계산하시겠습니까? (exit 입력 시 종료) ");//4. exit 기능추가
             dis = br.readLine();

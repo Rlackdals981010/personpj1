@@ -1,4 +1,6 @@
-package calculator;
+package calculator.cal;
+
+import calculator.cal.inter.InterCalcul;
 
 public class DivideOperator implements InterCalcul {
 

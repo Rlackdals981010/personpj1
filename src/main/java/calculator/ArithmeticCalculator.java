@@ -1,11 +1,14 @@
 package calculator;
 
+import calculator.cal.*;
+import calculator.cal.inter.InterCalcul;
+
 public class ArithmeticCalculator extends Calculator {
-    static AddOperator add = new AddOperator();
-    static SubtractOperator sub =new SubtractOperator();
-    static MultiplyOperator mul = new MultiplyOperator();
-    static DivideOperator div = new DivideOperator();
-    static ModOperator mod = new ModOperator();
+    static InterCalcul add = new AddOperator();
+    static InterCalcul sub = new SubtractOperator();
+    static InterCalcul mul = new MultiplyOperator();
+    static InterCalcul div = new DivideOperator();
+    static InterCalcul mod = new ModOperator();
 
 
     public double calculate(int a, int b, char sign) throws MyException {
