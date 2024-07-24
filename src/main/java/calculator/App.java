@@ -79,20 +79,21 @@ public class App {
         CircleCalculator cc = new CircleCalculator();
 
         while(true){ //4. 무한 루프를 위한 true 조건
-            System.out.print("사칙 연산을 원하시면 1 | 원 넓이 연산을 원하시면 2 : ");
-            int flag = Integer.parseInt(br.readLine());
 
-            if(flag == 1){
-                calculate_4(ac); //사칙연산
-            }
-            else if(flag == 2){
-                calculate_cir(cc); //원 넓이 연산
-            }
-            else{
+            try{
+                System.out.print("사칙 연산을 원하시면 1 | 원 넓이 연산을 원하시면 2 : ");
+                int flag = Integer.parseInt(br.readLine());
+
+                if(flag == 1){
+                    calculate_4(ac); //사칙연산
+                }
+                else if(flag == 2){
+                    calculate_cir(cc); //원 넓이 연산
+                }
+            }catch (Exception e) {
                 System.out.println("잘못된 입력입니다.");
                 continue;
             }
-
 
             System.out.println("더 계산하시겠습니까? (exit 입력 시 종료) ");//4. exit 기능추가
             dis = br.readLine();
