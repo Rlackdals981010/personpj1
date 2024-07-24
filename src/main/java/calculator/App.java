@@ -49,10 +49,16 @@ public class App {
     }
 
     static void calculate_cir(CircleCalculator cc)throws Exception{
-        System.out.print("원의 반지름을 입력하세요 :");
-        int r = Integer.parseInt(br.readLine());
-        double ret = cc.calculate(r);
-        System.out.println(ret);
+        try{
+            System.out.print("원의 반지름을 입력하세요 :");
+            int r = Integer.parseInt(br.readLine());
+            double ret = cc.calculate(r);
+            System.out.println(ret);
+        }
+        catch (Exception e){
+            System.out.println(e.getMessage());
+            return;
+        }
 
         System.out.println("가장 먼저 저장된 연산 결과를 삭제하시겠습니까? (remove 입력 시 삭제)"); //7. remove 추가
         dis = br.readLine();
