@@ -10,13 +10,21 @@ public class App {
     // 정 객체 생성, 입력받음
 
     static void calculate_4(ArithmeticCalculator ac)throws Exception{
+        int a=0;
+        int b=0;
+        char sign=' ';
+        try{
+            System.out.print("첫번째 정수 입력하세요: ");
+            a = Integer.parseInt(br.readLine());    //1. 정수 1 입력
+            System.out.print("두번째 정수 입력하세요: ");
+            b = Integer.parseInt(br.readLine());    //1. 정수 2 입력
+            System.out.print("연산기호 입력하세요: ");
+            sign = br.readLine().charAt(0);        //2. 기호 입력
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+            return ;
+        }
 
-        System.out.print("첫번째 정수 입력하세요: ");
-        int a = Integer.parseInt(br.readLine());    //1. 정수 1 입력
-        System.out.print("두번째 정수 입력하세요: ");
-        int b = Integer.parseInt(br.readLine());    //1. 정수 2 입력
-        System.out.print("연산기호 입력하세요: ");
-        char sign = br.readLine().charAt(0);        //2. 기호 입력
 
         double ret = 0; // 나눗셈 연산을 위해서 double 형으로 선언한다.
         try{

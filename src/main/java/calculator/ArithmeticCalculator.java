@@ -1,7 +1,7 @@
 package calculator;
 
-import calculator.cal.*;
-import calculator.cal.inter.InterCalcul;
+import calculator.cal.InterCalcul;
+import calculator.cal.imple.*;
 
 public class ArithmeticCalculator extends Calculator {
     static InterCalcul add = new AddOperator();

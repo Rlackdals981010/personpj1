@@ -1,7 +1,7 @@
-package calculator.cal;
+package calculator.cal.imple;
 
 
-import calculator.cal.inter.InterCalcul;
+import calculator.cal.InterCalcul;
 
 public class MultiplyOperator implements InterCalcul
 {
