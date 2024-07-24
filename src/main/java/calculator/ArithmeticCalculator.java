@@ -1,28 +1,34 @@
 package calculator;
 
-public class ArithmeticCalculator extends Calculator{
+public class ArithmeticCalculator extends Calculator {
+    static AddOperator add = new AddOperator();
+    static SubtractOperator sub =new SubtractOperator();
+    static MultiplyOperator mul = new MultiplyOperator();
+    static DivideOperator div = new DivideOperator();
 
-    public double calculate (int a,int b, char sign) throws MyException{
-        double ret =0;
+
+    public double calculate(int a, int b, char sign) throws MyException {
+        double ret = 0;
         switch (sign) {
             case '+':
-                ret = a + b;
+                ret = add.operate(a, b);
                 break;
             case '-':
-                ret = a - b;
+                ret = sub.operate(a,b);
                 break;
             case '*':
-                ret = a * b;
+                ret = mul.operate(a, b);
                 break;
             case '/':
-                if(b==0) throw new MyException(b);
-                else ret = a / (double)b;
+                if (b == 0) throw new MyException(b);
+                else ret = div.operate(a, b);
                 break;
             default:
                 throw new MyException(sign);
         }
-        super.getArr().add(ret);
+        super.setArr(ret);
         return ret;
     }
+
 
 }

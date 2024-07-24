@@ -1,6 +1,7 @@
 package calculator;
 
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Calculator extends Exception{
 
@@ -10,8 +11,8 @@ public class Calculator extends Exception{
         this.arr= new ArrayList<>();
     }
 
-    public void setArr(ArrayList<Double> arr) {
-        this.arr = arr;
+    public void setArr(double val) {
+        this.arr.add(val);
     }
 
     public ArrayList<Double> getArr() {
@@ -23,7 +24,7 @@ public class Calculator extends Exception{
     }
 
     public void inquiryResults(){   // L2. 5 . 조회 메소드 구현
-        for(double val : arr){
+        for(double val : getArr()){
             System.out.print(val+" ");
         }
         System.out.println();
