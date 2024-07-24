@@ -5,6 +5,7 @@ public class ArithmeticCalculator extends Calculator {
     static SubtractOperator sub =new SubtractOperator();
     static MultiplyOperator mul = new MultiplyOperator();
     static DivideOperator div = new DivideOperator();
+    static ModOperator mod = new ModOperator();
 
 
     public double calculate(int a, int b, char sign) throws MyException {
@@ -22,6 +23,10 @@ public class ArithmeticCalculator extends Calculator {
             case '/':
                 if (b == 0) throw new MyException(b);
                 else ret = div.operate(a, b);
+                break;
+            case '%':
+                if (b == 0) throw new MyException(b);
+                else ret = mod.operate(a, b);
                 break;
             default:
                 throw new MyException(sign);

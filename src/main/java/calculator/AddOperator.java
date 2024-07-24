@@ -1,8 +1,10 @@
 package calculator;
 
-public class AddOperator {
+public class AddOperator implements InterCalcul{
 
-    public int operate(int a, int b) {
+    @Override
+    public double operate(int a, int b) {
         return a + b;
     }
+
 }
