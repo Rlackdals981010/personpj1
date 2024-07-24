@@ -64,21 +64,20 @@ public class App {
             System.out.println(ret);
             System.out.println("가장 먼저 저장된 연산 결과를 삭제하시겠습니까? (remove 입력 시 삭제)"); //7. remove 추가
             dis = br.readLine();
+
             if(dis.equals("remove")) {          //7. remove 입력시
-                L2c.arr.remove(0);           //7. 가장 오래된. 즉 idx=0 삭제
+//                .remove(0);           //7. 가장 오래된. 즉 idx=0 삭제
+                L2c.arr_remove();       //L2.
             }
 
             System.out.println("저장된 연산결과를 조회하시겠습니까? (inquiry 입력 시 조회)"); //8. inquiry추가
             dis = br.readLine();
             if(dis.equals("inquiry")) {          //8. inquiry 입력시
-                for(double val : L2c.arr){
-                    System.out.print(val+" ");  //8. 내용 출력
-                }
-                System.out.println();
+                L2c.inquiryResults();
             }
 
 //          System.out.println("더 계산하시겠습니까? (exit 입력 시 종료) (현 저장개수 "+count+"개)");
-            System.out.println("더 계산하시겠습니까? (exit 입력 시 종료) (현 저장개수 "+L2c.arr.size()+"개)");//4. exit 기능추가
+            System.out.println("더 계산하시겠습니까? (exit 입력 시 종료) (현 저장개수 "+L2c.getArr().size()+"개)");//4. exit 기능추가
             dis = br.readLine();
             if(dis.equals("exit"))break;            //결정 객체에 exit 입력시 종료
         }
