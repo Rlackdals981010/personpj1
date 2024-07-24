@@ -1,5 +1,6 @@
 package calculator.cal;
 
+
 import calculator.cal.inter.InterCalcul;
 
 public class MultiplyOperator implements InterCalcul

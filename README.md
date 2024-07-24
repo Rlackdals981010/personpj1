@@ -22,7 +22,7 @@
 없음
 
 ## 접근
-1. 요구사항에 따라 1~6 과정은 Array, 7~은 Collection을, 특히 ArrayList를 사용할 예정, 사칙연산 기호는 char형
+1. 요구사항에 따라 1-6 과정은 Array, 7은 Collection을, 특히 ArrayList를 사용할 예정, 사칙연산 기호는 char형
     - 왜 ArrayList인가? -> ArrayList, LinkedList가 있지만, add와 remove의 시간복잡도는 각각 O(1),O(N)로 비슷하거나 일치하지만, get에서 ArrayList가 LinkedList보다 우월하다
 2. 입력방식은 scanner라고 되어있지만 BufferedReader 사용 예정
    이유 : BufferedReader가 String형으로 고정됨을 제외하고 속도, 메모리 용량, 보안성에서 모두 유리하다
@@ -58,5 +58,11 @@
 없음
 
 ## 접근
+1. 우선 연산자 기호 오류나 분모가 0인 경우는 매개변수 타입이 char, int로 구분이 가능하므로 Exception을 상속받는 MyException()예외 클래스를 생성해서 메시지를 커스텀한다.
+2. APP 자바 소스에서 모든 연산을 실행하므로 연산부는 Calculator에서 처리하도록 한다.
+3. 해당 클래스의 필드는 private -> Getter, Setter로 접근, 수정
+4. 라이브러리 함수로 직접 수행한 삭제, 조회를 클래스에서 선언한 메소드로 private에 접근해서 수행
+5. 사칙연산 클래스와 유사한 원 넓이 연산 기능 수행후 클래스 분리
+6. 사칙연산 클래스의 연산들을 단일 책임 원칙에 따라서 1개의 기능당 1개의 클래스로 구현
 
 ![IMG_9121](https://github.com/user-attachments/assets/7fc006ce-3ec9-48cf-8f62-8b19caf4d800)
