@@ -6,7 +6,7 @@ public class Calculator extends Exception{
 
     private ArrayList<Double> arr ;      //1. 결과 값 저장 컬렉션
 
-    public Calculator(){
+    public Calculator(){                //Lv2. 6 생성자를 이용한 초기화 구현
         this.arr= new ArrayList<>();
     }
 
