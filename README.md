@@ -44,6 +44,16 @@
 2. L1에서 구현한 App 클래스의 main 메서드에 Calculator가 활용될 수 있도록 수정
 3. App 클래스의 main 메서드에서 Calculator 클래스의 연산 결과를 저장하는 컬렉션 필드에 직접 접근하지 못하도록 수정
    - Getter, Setter 사용
+4. 가장 오래 저장된 데이터를 삭제하는 메소드 구현
+5. 저장된 연산 결과들을 조회하는 기능을 가진 메서드 구현
+6. Calculator 인스턴스 생성시 생성자를 통해 연산 결과 저장 컬렉션 필드 초기화
+7. 반지름을 입력받아 원의 넓이를 계산하고 반환하는 메서드 구현
+   - main 메서드 실행시 사칙연산과 원 넓이 계산을 선택하게함
+   - static, final 키워드 활용
+   - 원 넓이 저장 컬렉션 타입 선언.
+8. 사칙연산 계산기 ArithmeticCalculator클래스와 CircleCalculator클래스를 분리
+9. ArithmeticCalculator 클래스의 기능을 단일책임원칙을 만족하도록 수정
+10. 나머지 연산 ModOperator 클래스 추가
 ## 프로그래밍 요구사항
 없음
 
