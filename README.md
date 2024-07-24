@@ -59,4 +59,4 @@
 
 ## 접근
 
-![IMG_9120](https://github.com/user-attachments/assets/2de0ce00-21e4-4c9e-84d0-ebb7455a45e2)
+![IMG_9121](https://github.com/user-attachments/assets/7fc006ce-3ec9-48cf-8f62-8b19caf4d800)
