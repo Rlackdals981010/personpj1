@@ -4,6 +4,7 @@ import calculator.cal.InterCalcul;
 import calculator.cal.imple.*;
 
 public class ArithmeticCalculator extends Calculator {
+
     static InterCalcul add = new AddOperator();
     static InterCalcul sub = new SubtractOperator();
     static InterCalcul mul = new MultiplyOperator();

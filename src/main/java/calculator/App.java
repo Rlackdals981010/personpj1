@@ -90,6 +90,7 @@ public class App {
                 else if(flag == 2){
                     calculate_cir(cc); //원 넓이 연산
                 }
+
             }catch (Exception e) {
                 System.out.println("잘못된 입력입니다.");
                 continue;
